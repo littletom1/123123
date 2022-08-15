@@ -27,9 +27,10 @@
     "source": "https://github.com/yii2-starter-kit/yii2-starter-kit"
   },
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=7.4",
     "ext-intl": "*",
     "ext-gd": "*",
+    "yiisoft/yii2-redis": "~2.0.0",
     "yiisoft/yii2": "^2.0.13",
     "yiisoft/yii2-swiftmailer": "^2.0.0",
     "yiisoft/yii2-authclient": "^2.0.0",

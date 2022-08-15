@@ -11,6 +11,18 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'redis' => [
+            'class' => 'yii\redis\Connection',
+            'hostname' => 'docker_redis',
+            'port' => 6379,
+            'database' => 0,
+        ],
+        'session' => [
+            'class' => 'yii\redis\Session',
+        ],
+        'cache' => [
+            'class' => 'yii\redis\Cache',
+        ],
         'request' => [
             'cookieValidationKey' => env('BACKEND_COOKIE_VALIDATION_KEY'),
             'baseUrl' => env('BACKEND_BASE_URL'),

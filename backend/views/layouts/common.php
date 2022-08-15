@@ -223,7 +223,7 @@ $logEntries[] = [
                         ],
                         [
                             'label' => Yii::t('backend', 'Management'),
-                            'url' => ['/content/management/index'],
+                            'url' => ['/management/index'],
                             'icon' => FAS::icon('thumbtack', ['class' => ['nav-icon']]),
                             'active' => Yii::$app->controller->id === 'management',
                         ],

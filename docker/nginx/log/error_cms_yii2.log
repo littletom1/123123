@@ -184,3 +184,1724 @@ $_SERVER = [
     'YII_ENV' => 'dev',
     'APP_MAINTENANCE' => '0',
     'LINK_AS
+2022/08/08 04:34:38 [error] 31#31: *296 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/modules/content/controllers/ManagementController.php on line 19. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/ven" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET /content/management/index HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost"
+2022/08/08 04:34:38 [error] 31#31: *296 FastCGI sent in stderr: "dor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/modules/content/controllers/ManagementController.php on line 19. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A4
+2022/08/08 04:34:38 [error] 31#31: *296 FastCGI sent in stderr: "ONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1659933278.493634,
+    'REQUEST_TIME' => 1659933278,
+    'argv' => [],
+    'argc' => 0,
+    'YII_DEBUG' => 'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTENANCE' => '0',
+    'LINK_ASSETS' => 'true',
+    'DB_DSN' => 'mysql:host=docker_mysql;port=3306;dbname=yii2_starter_kit',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => 'zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET /content/management/index HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost"
+2022/08/09 07:16:44 [error] 33#33: *1312 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 98. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 98. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		
+2022/08/09 07:16:44 [error] 33#33: *1312 FastCGI sent in stderr: "1f2c2fd9fe7fdfb; pmaUser-1=QEM7%2BwiQmuRmP4FOqeISKJdZZU072ckj%2FyQ1oDVGfU8gI8TL5Sb8keL5c1Q%3D; pmaAuth-1=M2vwgFZNXg0qZc%2BjFM610r4gXfn5yMnTPMmbSZoW23%2FS87DzcOXCVvCigUB4jLFOme9FDrvJbN%2BN%2BGYSFQ%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/index',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONTENT_LENGTH' => '274',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '57784',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/update',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '274',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' 
+2022/08/11 01:21:17 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost"
+2022/08/11 01:21:19 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost"
+2022/08/11 01:21:21 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost"
+2022/08/15 04:33:17 [error] 33#33: *505 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 84. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 84. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g
+2022/08/15 04:33:17 [error] 33#33: *505 FastCGI sent in stderr: "7684bb4c841969a1a943016288f41e1a',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/show',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '37884',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/view?id=45',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=45',
+    'SCRIPT_FILENAME' => '/var/www/html/backend/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660537997.277685,
+    'REQUEST_TIME' => 1660537997,
+    'argv' => [
+        'id=45',
+    ],
+    'argc' => 1,
+    'YII_DEBUG' => 'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTEN
+2022/08/15 06:41:23 [error] 33#33: *513 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 84. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 84. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g
+2022/08/15 06:41:23 [error] 33#33: *513 FastCGI sent in stderr: "%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; PHPSESSID=7684bb4c841969a1a943016288f41e1a',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/show',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '33440',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/view?id=54',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=54',
+    'SCRIPT_FILENAME' => '/var/www/html/backend/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660545682.762971,
+    'REQUEST_TIME' => 1660545682,
+    'argv' => [
+        'id=54',
+    ],
+    'argc' => 1,
+    'YII_DEBUG' => 'true',
+    'YII_
+2022/08/15 07:53:53 [error] 30#30: *1063 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 94. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 94. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		
+2022/08/15 07:53:53 [error] 30#30: *1063 FastCGI sent in stderr: " pmaUser-1=h%2BnNKsFFtLk8YbDBomKL8VeLcvspb1%2BVUqvCuOFuj1bw4QONqitv3NUuj94%3D; pmaAuth-1=poq9iAHLfMJ0mAFOdr7K54toP7E7qO4lXTj4VCq0YaBdWP3pchBFZdFCrm2gIBsOGysXN5%2FvAF4CrKPgmQ%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/show',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONTENT_LENGTH' => '98',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '56882',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/delete?id=66',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '98',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'id=66',
+    'SC
+2022/08/15 09:54:30 [error] 31#31: *1910 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 115. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 09:54:30 [error] 31#31: *1910 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=59',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla
+2022/08/15 09:54:30 [error] 31#31: *1910 FastCGI sent in stderr: "ailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=59"
+2022/08/15 09:54:33 [error] 31#31: *1910 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 115. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 115. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 
+2022/08/15 09:54:33 [error] 31#31: *1910 FastCGI sent in stderr: "b97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/show',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '48152',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/update?id=59',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=59',
+    'SCRIPT_FILENAME' => '/var/www/html/backend/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660557272.954714,
+    'REQUEST_TIME' => 1660557272,
+    'argv' => [
+        'id=
+2022/08/15 09:54:42 [error] 31#31: *1948 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 115. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 115. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 
+2022/08/15 09:54:42 [error] 31#31: *1948 FastCGI sent in stderr: "b97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/show',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '46792',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/update?id=61',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=61',
+    'SCRIPT_FILENAME' => '/var/www/html/backend/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660557282.095527,
+    'REQUEST_TIME' => 16605
+2022/08/15 09:55:21 [error] 31#31: *1948 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 117. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\Error" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET /management/update?id=61 HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/show"
+2022/08/15 09:55:21 [error] 31#31: *1948 FastCGI sent in stderr: "Handler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 117. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd8733
+2022/08/15 09:55:21 [error] 31#31: *1948 FastCGI sent in stderr: "  ],
+    'argc' => 1,
+    'YII_DEBUG' => 'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTENANCE' => '0',
+    'LINK_ASSETS' => 'true',
+    'DB_DSN' => 'mysql:host=docker_mysql;port=3306;dbname=yii2_starter_kit',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => 'zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET /management/update?id=61 HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/show"
+2022/08/15 09:55:40 [error] 31#31: *1948 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 117. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\Error" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET /management/update?id=63 HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/show"
+2022/08/15 09:55:40 [error] 31#31: *1948 FastCGI sent in stderr: "Handler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 117. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd8733
+2022/08/15 09:55:40 [error] 31#31: *1948 FastCGI sent in stderr: "'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTENANCE' => '0',
+    'LINK_ASSETS' => 'true',
+    'DB_DSN' => 'mysql:host=docker_mysql;port=3306;dbname=yii2_starter_kit',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => 'zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "GET /management/update?id=63 HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/show"
+2022/08/15 09:56:49 [error] 31#31: *1960 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 118. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 09:56:49 [error] 31#31: *1960 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=63',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTT
+2022/08/15 09:56:49 [error] 31#31: *1960 FastCGI sent in stderr: "ailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=63"
+2022/08/15 09:57:44 [error] 31#31: *1960 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 118. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 09:57:44 [error] 31#31: *1960 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=63',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla
+2022/08/15 09:57:44 [error] 31#31: *1960 FastCGI sent in stderr: "ailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=63"
+2022/08/15 09:58:09 [error] 31#31: *1960 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 119. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:123
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(123): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 123, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 09:58:09 [error] 31#31: *1960 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=63',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla
+2022/08/15 09:58:09 [error] 31#31: *1960 FastCGI sent in stderr: "ailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=63"
+2022/08/15 09:58:34 [error] 31#31: *1960 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 119. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:123
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(123): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 123, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 09:58:34 [error] 31#31: *1960 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=63',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla
+2022/08/15 09:58:34 [error] 31#31: *1960 FastCGI sent in stderr: "ailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=63"
+2022/08/15 09:58:44 [error] 31#31: *1960 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:124
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(124): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 124, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 09:58:44 [error] 31#31: *1960 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=8fX4D0N8WR6VEVSjHy0PN5IhtEjW2Y4QhQSqiDdXGm9IbyBa6VFbcAbxe%2FA%3D; pmaAuth-1=7k%2BsBHsMbdSnoMlTrv%2B3WRcS09Qjb6IMuuNCIvz3dqNSMmSAzo%2Bkc7jhp0N7IJ%2BKgxYBk9hF8f505eHRJA%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=63',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla
+2022/08/15 09:58:44 [error] 31#31: *1960 FastCGI sent in stderr: "ailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=63"
+2022/08/15 10:01:34 [error] 31#31: *2030 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 118. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 118. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 
+2022/08/15 10:01:34 [error] 31#31: *2030 FastCGI sent in stderr: "35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/show?page=2&per-page=10',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'cms.yii2.local',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.19.0.6',
+    'REMOTE_PORT' => '41086',
+    'REMOTE_ADDR' => '172.19.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.23.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/html/backend/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/management/update?id=72',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=72',
+    'SCRIPT_FILENAME' => '/var/www/html/backend/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660557694.438385,
+    'REQUEST_TIME' =
+2022/08/15 10:02:06 [error] 31#31: *2030 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 118. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 10:02:06 [error] 31#31: *2030 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=58',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_CO
+2022/08/15 10:02:06 [error] 31#31: *2030 FastCGI sent in stderr: "atcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:02:35 [error] 31#31: *2030 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/Inline" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:02:35 [error] 31#31: *2030 FastCGI sent in stderr: "Action.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%
+2022/08/15 10:02:36 [error] 31#31: *2030 FastCGI sent in stderr: "b/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660557755.82439,
+    'REQUEST_TIME' => 1660557755,
+    'argv' => [],
+    'argc' => 0,
+    'YII_DEBUG' => 'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTENANCE' => '0',
+    'LINK_ASSETS' => 'true',
+    'DB_DSN' => 'mysql:host=docker_mysql;port=3306;dbname=yii2_starter_kit',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => 'zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:02:58 [error] 31#31: *2030 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/Inline" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:02:58 [error] 31#31: *2030 FastCGI sent in stderr: "Action.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%
+2022/08/15 10:02:58 [error] 31#31: *2030 FastCGI sent in stderr: "b/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660557777.963305,
+    'REQUEST_TIME' => 1660557777,
+    'argv' => [],
+    'argc' => 0,
+    'YII_DEBUG' => 'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTENANCE' => '0',
+    'LINK_ASSETS' => 'true',
+    'DB_DSN' => 'mysql:host=docker_mysql;port=3306;dbname=yii2_starter_kit',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => 'zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:06:53 [error] 30#30: *2131 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 122. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(Error))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#4 {main}
+Previous exception:
+Error: Call to a member function save() on array in /var/www/html/backend/controllers/ManagementController.php:139
+Stack trace:
+#0 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_L
+2022/08/15 10:06:53 [error] 30#30: *2131 FastCGI sent in stderr: "ke 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=58',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONTENT_LENGTH' => '759',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localh
+2022/08/15 10:06:53 [error] 30#30: *2131 FastCGI sent in stderr: ",
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:07:02 [error] 30#30: *2129 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 122. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(Error))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#4 {main}
+Previous exception:
+Error: Call to a member function save() on array in /var/www/html/backend/controllers/ManagementController.php:139
+Stack trace:
+#0 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_L
+2022/08/15 10:07:02 [error] 30#30: *2129 FastCGI sent in stderr: "ke 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=58',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONTENT_LENGTH' => '765',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localh
+2022/08/15 10:07:02 [error] 30#30: *2129 FastCGI sent in stderr: ",
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:07:13 [error] 30#30: *2129 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 122. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(Error))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#4 {main}
+Previous exception:
+Error: Call to a member function save() on array in /var/www/html/backend/controllers/ManagementController.php:139
+Stack trace:
+#0 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.p" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:07:13 [error] 30#30: *2129 FastCGI sent in stderr: "hp(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'h
+2022/08/15 10:07:13 [error] 30#30: *2129 FastCGI sent in stderr: ",
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:10:08 [error] 33#33: *2144 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Attempt to assign property 'vendor' of non-object in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Attempt to assi...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->action" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:10:08 [error] 33#33: *2144 FastCGI sent in stderr: "Update()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%
+2022/08/15 10:10:08 [error] 33#33: *2144 FastCGI sent in stderr: "=> '',
+    'SCRIPT_FILENAME' => '/var/www/html/backend/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660558207.939221,
+    'REQUEST_TIME' => 1660558207,
+    'argv' => [],
+    'argc' => 0,
+    'YII_DEBUG' => 'true',
+    'YII_ENV' => 'dev',
+    'APP_MAINTENANCE' => '0',
+    'LINK_ASSETS' => 'true',
+    'DB_DSN' => 'mysql:host=docker_mysql;port=3306;dbname=yii2_starter_kit',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => 'zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:11:17 [error] 33#33: *2144 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 10:11:17 [error] 33#33: *2144 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=58',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0
+2022/08/15 10:11:17 [error] 33#33: *2144 FastCGI sent in stderr: "atcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:11:28 [error] 33#33: *2144 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 10:11:28 [error] 33#33: *2144 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=58',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0
+2022/08/15 10:11:28 [error] 33#33: *2144 FastCGI sent in stderr: "atcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:11:30 [error] 33#33: *2144 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#4 {main}
+Previous exception:
+yii\base\ErrorException: Creating default object from empty value in /var/www/html/backend/controllers/ManagementController.php:122
+Stack trace:
+#0 /var/www/html/backend/controllers/ManagementController.php(122): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/b...', 122, Array)
+#1 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFS
+2022/08/15 10:11:30 [error] 33#33: *2144 FastCGI sent in stderr: "2880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://localhost/management/update?id=58',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0
+2022/08/15 10:11:31 [error] 33#33: *2144 FastCGI sent in stderr: "atcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:12:01 [error] 33#33: *2144 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/html/backend/controllers/ManagementController.php on line 120. in /var/www/html/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(Error))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#4 {main}
+Previous exception:
+Error: Call to a member function save() on array in /var/www/html/backend/controllers/ManagementController.php:143
+Stack trace:
+#0 [internal function]: backend\controllers\ManagementController->actionUpdate()
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('update', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('management/upda...', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Appli" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
+2022/08/15 10:12:01 [error] 33#33: *2144 FastCGI sent in stderr: "cation.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/backend/web/index.php(23): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'HOSTNAME' => 'a07db2b26ac0',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_VERSION' => '7.4.30',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz.asc',
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.30.tar.xz',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => 'ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'pma_lang=vi; _identity=d481fb690b1dbac77eeefa44381a4ee8a857bde98beccb2843482e5839bc9171a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ImccFUdqXvOhx7603rVsJ5SXUkIDi-Rf%22%2C2592000%5D%22%3B%7D; _csrf=677a1e4ec10b61a21261941ccb8deb52fdbf1f36fa566aa3fde95bb4e9696229a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vhfPBJp_KJG6dJPfXpHgGwzC5-BJPphJ%22%3B%7D; phpMyAdmin=22cd87337fd8716d8a435e349485febc; PHPSESSID=61bb435b655094bb97fe73d35d61e75f; pmaUser-1=57SY5ggkkzlPA30QlTLmHSKFxIurx4ZBEE5Ic5oeHqyjSy7HiDcnlRsOD3Q%3D; pmaAuth-1=04Hx4%2FhU3KS%2ByMg1ZG0OxF5RRusl4CoKQfFPLCd9drRky8GG0Px5y8EopWpt0c5%2FQXUa1xyNWpaT88DUUg%3D%3D',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERE
+2022/08/15 10:12:02 [error] 33#33: *2144 FastCGI sent in stderr: "zyz123',
+    'DB_TABLE_PREFIX' => '',
+    'DB_CHARSET' => 'utf8mb4',
+    'TEST_DB_DSN' => 'mysql:host=db;port=3306;dbname=yii2-starter-kit-test',
+    'TEST_DB_USERNAME' => 'root',
+    'TEST_DB_PASSWORD' => 'root',
+    'API_HOST_INFO' => 'http://api.yii2-starter-kit.localhost',
+    'FRONTEND_HOST_INFO' => 'http://yii2-starter-kit.localhost',
+    'BACKEND_HOST_INFO' => 'http://backend.yii2-starter-kit.localhost',
+    'STORAGE_HOST_INFO' => 'http://storage.yii2-starter-kit.localhost',
+    'SMTP_HOST' => 'mailcatcher',
+    'SMTP_PORT' => '1025',
+    'FRONTEND_COOKIE_VALIDATION_KEY' => 'EVubYisZXxEKs62N7pFnotHP6ufGsnqU',
+    'BACKEND_COOKIE_VALIDATION_KEY' => 'X2Oce9yPVOUTvV2OA4UOwYneftFyfAlG',
+    'ADMIN_EMAIL' => 'admin@yii2-starter-kit.localhost',
+    'ROBOT_EMAIL' => 'robot@yii2-starter-kit.localhost',
+    'GITHUB_CLIENT_ID' => 'your-client-id',
+    'GITHUB_CLIENT_SECRET' => 'your-client-secret',
+    'GLIDE_SIGN_KEY' => 'KwOSYEsoUNy0f4hUuffsMnGoSf7HPQGY',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+    'COMPOSE_CONVERT_WINDOWS_PATHS' => '1',
+]" while reading upstream, client: 172.19.0.1, server: cms.yii2.local, request: "POST /management/update HTTP/1.1", upstream: "fastcgi://172.19.0.5:9000", host: "localhost", referrer: "http://localhost/management/update?id=58"
