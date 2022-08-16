@@ -63,7 +63,7 @@ class Management extends ActiveRecord{
             [['date'], 'default', 'value' => function () {
                 return date(DATE_ISO8601);
             }],
-            [['styleno','uom','prefix','sufix','height','width','length','weight','u    pc','size1','color1','carton'],'integer','min' => 0],
+            [['styleno','uom','prefix','sufix','height','width','length','weight','upc','size1','color1','carton'],'integer','min' => 0],
             [['styleno','uom','prefix','sufix','height','width','length','weight','upc','size1','color1','carton'],'required'],
             [['size2','color2','size3','color3'],'default', 'value' => null],
 

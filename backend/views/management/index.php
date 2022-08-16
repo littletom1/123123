@@ -60,14 +60,19 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
 </div>
+    <div style="margin-top: 10px">
+        <?= $form->field($management, "container")
+            ->input('text', ['placeholder'=> 'Container'])->label('Container :') ?>
+    </div>
 
-    <?= $form->field($management, "container")
-        ->input('text', ['placeholder'=> 'Container'])->label('Container :') ?>
+    <div style="margin-top: 10px">
+        <?= $form->field($management, "receiving")
+            ->input('text', ['placeholder'=> 'Receiving'])->label('Receiving# :') ?>
+    </div>
 
-    <?= $form->field($management, "receiving")
-        ->input('text', ['placeholder'=> 'Receiving'])->label('Receiving# :') ?>
 
-    <div>
+
+    <div style="margin-top: 20px">
         <table class="table table-bordered" id="mytable">
             <thead>
             <tr>
@@ -148,13 +153,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     </span>
 
-    <div>
+    <div style="margin-top: 20px">
         <?php
         echo Html::submitButton('Submit', [ 'class'=>"btn btn-primary"]);
         ActiveForm::end();
         ?>
     </div>
-    <div>
+    <div style="margin-top: 20px">
         <a href="/management/show">Main Menu</a>
     </div>
 

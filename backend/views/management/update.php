@@ -24,10 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
-<?php $form = ActiveForm::begin([
-    'action' => ['update'],
-    'method' => 'post',
-]) ?>
+<?php $form = ActiveForm::begin() ?>
 
 <?php if (Yii::$app->session->hasFlash('success')): ?>
     <div class="alert alert-success alert-dismissable">

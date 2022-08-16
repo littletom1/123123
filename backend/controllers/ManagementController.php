@@ -55,13 +55,10 @@ class ManagementController extends Controller
                 Yii::$app->session->setFlash('success', 'Inserted Successfully!');
             }else{
                 Yii::$app->session->setFlash('error', "ERROR!!!.");
-
             }
             return $this->redirect(['index']);
-
             //var_dump($management);
         }
-
         return $this->render('index',['management'=>$management]);
 
     }
@@ -96,7 +93,6 @@ class ManagementController extends Controller
        if($model){
            $management = Management::findOne($id)->delete();
            Yii::$app->session->setFlash('success', 'Delete Successfully!');
-
        }
        $dataProvider = new ActiveDataProvider([
            'query' => RedisManagement::find(),
@@ -110,51 +106,62 @@ class ManagementController extends Controller
    }
 
    public function actionUpdate(){
-       $request = Yii::$app->request;
+        $request = Yii::$app->request;
        $id = $request->get('id');
-       //$management = new Management();
-       $management = RedisManagement::find()->where(['id' => $request->get('id')])->one();
-       if (Yii::$app->request->post() )  {
-
-           $redis_management = Yii::$app->request->post();
-//           var_dump($redis_management['RedisManagement']['vendor']);
-//           exit();
-
-           $management->vendor = $redis_management['RedisManagement']['vendor'];
-           $management->measurement = $redis_management['RedisManagement']['measurement'];
-           $management->date = $redis_management['RedisManagement']['date'];
-           $management->container = $redis_management['RedisManagement']['container'];
-           $management->receiving = $redis_management['RedisManagement']['receiving'];
-           $management->styleno = $redis_management['RedisManagement']['styleno'];
-           $management->uom = $redis_management['RedisManagement']['uom'];
-           $management->prefix = $redis_management['RedisManagement']['prefix'];
-           $management->sufix = $redis_management['RedisManagement']['sufix'];
-           $management->height = $redis_management['RedisManagement']['height'];
-           $management->width = $redis_management['RedisManagement']['width'];
-           $management->length = $redis_management['RedisManagement']['length'];
-           $management->weight = $redis_management['RedisManagement']['weight'];
-           $management->upc = $redis_management['RedisManagement']['upc'];
-           $management->size1 = $redis_management['RedisManagement']['size1'];
-           $management->color1 = $redis_management['RedisManagement']['color1'];
-           $management->size2 = $redis_management['RedisManagement']['size2'];
-           $management->color2 = $redis_management['RedisManagement']['color2'];
-           $management->size3 = $redis_management['RedisManagement']['size3'];
-           $management->color3 = $redis_management['RedisManagement']['color3'];
-           $management->carton = $redis_management['RedisManagement']['carton'];
-           $management->save();
-           Yii::$app->session->setFlash('success', 'Update Successfully!');
-           return $this->redirect(['show','id' => $management->id]);
-
-       }else{
-           return $this->render('update',['management'=>$management]);
-
-       }
-//       if($model){
-//           $management = Management::findOne($id)->update();
-//           Yii::$app->session->setFlash('success', 'Update Successfully!');
-//
-//       }
-
+       $management = RedisManagement::find()->where(['id' => $id])->one();
+       $model = Management::find()->where(['id' => $id])->one();
+        if(Yii::$app->request->post()){
+              $redis_management = Yii::$app->request->post();
+              //update mySql
+              $model->vendor = $redis_management['RedisManagement']['vendor'];
+            $model->measurement = $redis_management['RedisManagement']['measurement'];
+            $model->date = $redis_management['RedisManagement']['date'];
+            $model->container = $redis_management['RedisManagement']['container'];
+            $model->receiving = $redis_management['RedisManagement']['receiving'];
+            $model->styleno = $redis_management['RedisManagement']['styleno'];
+            $model->uom = $redis_management['RedisManagement']['uom'];
+            $model->prefix = $redis_management['RedisManagement']['prefix'];
+            $model->sufix = $redis_management['RedisManagement']['sufix'];
+            $model->height = $redis_management['RedisManagement']['height'];
+            $model->width = $redis_management['RedisManagement']['width'];
+            $model->length = $redis_management['RedisManagement']['length'];
+            $model->weight = $redis_management['RedisManagement']['weight'];
+            $model->upc = $redis_management['RedisManagement']['upc'];
+            $model->size1 = $redis_management['RedisManagement']['size1'];
+            $model->color1 = $redis_management['RedisManagement']['color1'];
+            $model->size2 = $redis_management['RedisManagement']['size2'];
+            $model->color2 = $redis_management['RedisManagement']['color2'];
+            $model->size3 = $redis_management['RedisManagement']['size3'];
+            $model->color3 = $redis_management['RedisManagement']['color3'];
+            $model->carton = $redis_management['RedisManagement']['carton'];
+            $model->save();
+              //update Redis
+            $management->vendor = $redis_management['RedisManagement']['vendor'];
+            $management->measurement = $redis_management['RedisManagement']['measurement'];
+            $management->date = $redis_management['RedisManagement']['date'];
+            $management->container = $redis_management['RedisManagement']['container'];
+            $management->receiving = $redis_management['RedisManagement']['receiving'];
+            $management->styleno = $redis_management['RedisManagement']['styleno'];
+            $management->uom = $redis_management['RedisManagement']['uom'];
+            $management->prefix = $redis_management['RedisManagement']['prefix'];
+            $management->sufix = $redis_management['RedisManagement']['sufix'];
+            $management->height = $redis_management['RedisManagement']['height'];
+            $management->width = $redis_management['RedisManagement']['width'];
+            $management->length = $redis_management['RedisManagement']['length'];
+            $management->weight = $redis_management['RedisManagement']['weight'];
+            $management->upc = $redis_management['RedisManagement']['upc'];
+            $management->size1 = $redis_management['RedisManagement']['size1'];
+            $management->color1 = $redis_management['RedisManagement']['color1'];
+            $management->size2 = $redis_management['RedisManagement']['size2'];
+            $management->color2 = $redis_management['RedisManagement']['color2'];
+            $management->size3 = $redis_management['RedisManagement']['size3'];
+            $management->color3 = $redis_management['RedisManagement']['color3'];
+            $management->carton = $redis_management['RedisManagement']['carton'];
+            $management->save();;
+            Yii::$app->getSession()->setFlash('success', 'Update Successfully!');
+            return $this->redirect(['show','id'=>$management->id]);
+        }
+        return $this->render('update',['management'=>$management]);
    }
 
 }
